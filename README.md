@@ -8,5 +8,4 @@ My first project!
 - Data is stored in localStorage
 
 ## Link
-
-https://QieProject.github.io/my-calendar/
+(https://qieproject.github.io/my-calendar/)
