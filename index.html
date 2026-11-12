@@ -1,18 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Calendar</title>
+  <title>My Task Tracker</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>My Calendar</h1>
+  <h1>My Task Tracker</h1>
 
-  <input type="text" id="taskInput" placeholder="Tulis task kau">
-  <input type="date" id="dateInput">
-  <button id="addBtn">Tambah</button>
+  <label for="">Task name (course name)</label> <br>
+  <input type="text" id="taskSubject" placeholder="Task Name" required>
 
-  <ul id="taskList"></ul>
+  <br><br>
+
+  <label for="">Task title</label> <br>
+  <input type="text" id="taskTitle" placeholder="Title" required>
+
+  <br><br>
+
+  <label for="">Task category</label> <br>
+  <select id="taskCategory" required>
+    <option value="Solo">Solo</option>
+    <option value="Group">Group</option>
+  </select>
+
+  <br><br>
+  
+  <label for="">Submission date</label> <br>
+  <input type="date" id="taskSubmitDate" required>
+
+  <br><br>
+
+  <label for="">Task Description</label> <br>
+  <textarea id="taskDecs" placeholder="Description" required></textarea>
+
+  <br><br>
+
+  <button id="addBtn">Add New</button>
+
+  <br><br>
+
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Status</th>
+        <th>Submission Date</th>
+        <th>Subject</th>
+        <th>Title</th>
+        <th>Category</th>
+        <th>Description</th>
+        <th>Date Added</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="taskList"></tbody>
+  </table>
 
   <script src="script.js"></script>
 </body>
