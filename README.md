@@ -1,6 +1,4 @@
-# my-calendar
-
-My first project!
+# my-task-tracker
 
 ## Version 1.0.0 (10/11/26)
 
