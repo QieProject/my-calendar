@@ -78,13 +78,12 @@ addBtn.onclick = function () {
   let title = taskTitle.value;
   let category = taskCategory.value;
   let taskDate = taskSubmitDate.value;
-  let description = taskDecs.value; 
-  
-  /*
-  if (subject === "" || title === "" || taskDate === "") {
-    alert("Isi subjek, tajuk dan tarikh hantar dulu");
+  let description = taskDecs.value;
+
+  if (subject.trim() == "" || title.trim() == "" || category.trim() == "" || taskDate.trim() == "" || description.trim() == "") {
+    alert("Please enter all details");
     return;
-  } */
+  }
 
   let dateAdded = new Date().toLocaleDateString("en-CA");
 
